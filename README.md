@@ -52,6 +52,8 @@
 
 ### 5.定めた対処法をもとにマニュアル作成
 
+### 6.https://github.com/furuhashilab/2022gsc_WataruYoshida/issues/1#issuecomment-1321897743　を参考に、JOSMを用いて埼玉県新座市にLO1建物データのインポートを行う
+
 ## Results
 
 
