@@ -32,7 +32,25 @@
 事前準備マニュアル作成後は、埼玉県新座市のLOD1建物データインポートを行う。
 
 ## Methods
+### 1.インポートする際のJava実行環境の調査
+インポート時に使用する`citygml-osm`開発者である林優氏に助言をいただきながら、Javaのバージョンを変えながらpowershellでcitygml-osmを開き、`java -Dfile.encoding=utf-8 -jar citygml-osm-jar-with-dependencies.jar 1st`のコマンドを実行
 
+### 2.[Tasking Manager](https://tasks.teachosm.org/projects/1499/tasks/?page=1)、JOSMを用いたOSMの妥当性検証、エラー・警告の修正
+[JA:MLIT PLATEAU/imports list](https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_list)を参考として妥当性検証を実施する地域は**埼玉県新座市**とした。
+
+* [Tasking Manager](https://tasks.teachosm.org/projects/1499/tasks/?page=1)では以下の図のように新座市を16分割し、マッピングという名目で妥当性検証を行った。筆者の判断で修正できるエラー・警告は修正し、修正が難しい場合は事例収集としてスクリーンショットの撮影・緯度経度の記録を行った。
+![IMG_7748](https://user-images.githubusercontent.com/93134160/216592576-a55161d7-e5fa-412c-93ea-ea8002377d2c.jpg)
+
+* JOSMにおける妥当性検証では「ファイル」から「データをダウンロード」を選択し、[Tasking Manager](https://tasks.teachosm.org/projects/1499/tasks/?page=1)で分割したメッシュごとに妥当性検証を行い、エラー・警告の事例収集を行った。
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/93134160/216593765-83a20434-5a00-4c8b-8da7-08787bb7c7f1.png">
+
+### 3.OSMの妥当性検証で表示されたエラー・警告の事例収集
+* [Tasking Manager](https://tasks.teachosm.org/projects/1499/tasks/?page=1)、JOSMでの妥当性検証で筆者では修正不可だったエラー・警告のスクリーンショット・緯度経度を記録。
+* [JA:JOSM/Validator](https://wiki.openstreetmap.org/wiki/JA:JOSM/Validator)を参考とし、「重複したノード」「重複したウェイノード」「逆転した海岸線」「結合されていない海岸線」「順序だっていない海岸線」「不完全なウェイ」「交差しているウェイ」「重なり合っている高速道路、ウェイ」「同一ウェイ内での交差」「類似した名前のウェイ」「閉じていないウェイ」「タグのつけられていないウェイ」「他の高速道路付近のウェイとノード」「合致していない外側のウェイの形成」「（マルチ）多角形と同様である内側のウェイの形成」「Fix.meリクエスト」やこれらに関するエラー・警告、その他筆者が重要であると判断したエラー・警告のスクリーンショット・緯度経度を記録した
+
+### 4.収集したエラー・警告を[Googole Spredsheet](https://docs.google.com/spreadsheets/d/1g_SA-b3N3m7rKWzYLOa16hlr8yBpsMljPL22gAJN4FQ/edit?usp=sharing)にまとめ、各エラー・警告を古橋教授やOpenStreeaMapの上級者マッパーに見てもらい、各項目の対処法を定義する。
+
+### 5.定めた対処法をもとにマニュアル作成
 
 ## Results
 
