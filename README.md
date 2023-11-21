@@ -68,6 +68,8 @@ https://qiita.com/nyampire/items/1c10afdd36750c87154d
 
 https://wiki.openstreetmap.org/wiki/JA:JOSM/Validator
 
+https://lists.openstreetmap.org/pipermail/talk-ja/
+
 
 ## 参考文献
 
