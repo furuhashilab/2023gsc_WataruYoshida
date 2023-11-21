@@ -64,6 +64,8 @@
 
 https://github.com/yuuhayashi/citygml-osm/issues/96#issue-1429854543
 
+https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_outline/manual
+
 https://qiita.com/nyampire/items/1c10afdd36750c87154d 
 
 https://wiki.openstreetmap.org/wiki/JA:JOSM/Validator
