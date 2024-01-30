@@ -32,6 +32,13 @@
 事前準備マニュアル作成後は、埼玉県新座市のLOD1建物データインポートを行う。
 
 ## Methods
+
+## 新座市インポート前
+![420690374_395962506272993_7053118599376449919_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/76ef2189-1743-4b9e-8aae-afb4c651c8ee)
+![417337755_1144385293392514_1737859945341398467_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/c8502dbf-165e-41a4-9c26-0b9500b85e34)
+
+
+
 ### 1.インポートする際のJava実行環境の調査
 インポート時に使用する`citygml-osm`開発者である林優氏に助言をいただきながら、Javaのバージョンを変えながらpowershellでcitygml-osmを開き、`java -Dfile.encoding=utf-8 -jar citygml-osm-jar-with-dependencies.jar 1st`のコマンドを実行
 
