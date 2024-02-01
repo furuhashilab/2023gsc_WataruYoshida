@@ -70,7 +70,25 @@
 ### 2. [Tasking Manager](https://tasks.teachosm.org/projects/1499/tasks/?page=1)、JOSMを用いたOSMの妥当性検証、エラー・警告の修正
 妥当性検証およびエラー・警告の修正完了
 
-### 3. 
+### 3. コミュニティへの事前告知
+**アカウント名をfuruhashilab4plateauimportからYoshida_plateauimportに変更**
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/310e4475-d5c1-491a-a6c2-722ed21f24db)
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/1998fe38-08a8-45d2-bae9-67ce17a3bfcc)
+
+## 4. コンバーターを使用して変換作業を行う際のツール
+
+
+
+## 5. 1st-validation(解凍したフォルダに含まれている `***.osm` の妥当性検証)、2nd-validation(コンバーターで`***.org.osm`に変更したファイルの妥当性検証)及びエラー・警告のリスト化
+
+妥当性検証時に発生したエラー・警告を収集したリスト(https://docs.google.com/spreadsheets/d/1g_SA-b3N3m7rKWzYLOa16hlr8yBpsMljPL22gAJN4FQ/edit?usp=sharing)
+
+* 修正方法
+**ウェイが同じ区間を二度含んでいる**
+![妥当性検証_修正](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/1360e4a7-cce9-4803-89bc-a008a949cb27)
+
+outlineを削除し、飛び出したノードを隣のノードと結合させる
+
 
 ### 新座市インポート前
 ![420690374_395962506272993_7053118599376449919_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/76ef2189-1743-4b9e-8aae-afb4c651c8ee)
