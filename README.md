@@ -38,11 +38,7 @@
 
 ## Methods
 
-### 新座市インポート前
-![420690374_395962506272993_7053118599376449919_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/76ef2189-1743-4b9e-8aae-afb4c651c8ee)
-![417337755_1144385293392514_1737859945341398467_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/c8502dbf-165e-41a4-9c26-0b9500b85e34)
-
-
+## 「事前準備」
 
 ### 1.インポートする際のJava実行環境の調査
 インポート時に使用する`citygml-osm`開発者である林優氏に助言をいただきながら、Javaのバージョンを変えながらpowershellでcitygml-osmを開き、`java -Dfile.encoding=utf-8 -jar citygml-osm-jar-with-dependencies.jar 1st`のコマンドを実行
@@ -62,11 +58,25 @@
 
 ### 4.収集したエラー・警告を[Googole Spredsheet](https://docs.google.com/spreadsheets/d/1g_SA-b3N3m7rKWzYLOa16hlr8yBpsMljPL22gAJN4FQ/edit?usp=sharing)にまとめ、各エラー・警告を古橋教授やOpenStreeaMapの上級者マッパーに見てもらい、各項目の対処法を定義する。
 
-### 5.定めた対処法をもとにマニュアル作成
+## PLATEAUデータインポート作業
 
-### 6.https://github.com/furuhashilab/2022gsc_WataruYoshida/issues/1#issuecomment-1321897743　を参考に、JOSMを用いて埼玉県新座市にLO1建物データのインポートを行う
+### [JA:MLIT PLATEAU/imports outline/manual](https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_outline/manual)　に基づき、JOSMを用いて埼玉県新座市にLO1建物データのインポート作業を行う
 
 ## Results
+
+### 1. インポートする際のJava実行環境の調査
+検証の結果、citygml-osmで利用されている"apache camel v2.25.4"が**Java8,Java11にしかサポートされていない**ため、Java8(LTS)やJava11(LTS)をインストールしている場合であると正しく動作するが、その他のJavaのバージョンだと動作しないということが判明した。
+
+### 2. [Tasking Manager](https://tasks.teachosm.org/projects/1499/tasks/?page=1)、JOSMを用いたOSMの妥当性検証、エラー・警告の修正
+妥当性検証およびエラー・警告の修正完了
+
+### 3. 
+
+### 新座市インポート前
+![420690374_395962506272993_7053118599376449919_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/76ef2189-1743-4b9e-8aae-afb4c651c8ee)
+![417337755_1144385293392514_1737859945341398467_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/c8502dbf-165e-41a4-9c26-0b9500b85e34)
+
+
 
 
 ## 謝辞
