@@ -12,28 +12,33 @@
 
 ## Abstract
 
-本研究では、誰でも編集可能な地図[OpenStreetMap](https://www.openstreetmap.org/#map=15/35.7449/139.4576) (以下OSM)の3D建物データの量的・質的向上を目的として、国土交通省主導の日本全国の3D都市モデルの整備・活用・オープンデータ化を目指すプロジェクト[PLATEAU](https://www.mlit.go.jp/plateau/)のLOD1の建物データをOSMにインポートするという作業を行う。インポート対象地域を埼玉県新座市とし、PLATEAUデータのインポート作業に併せ、インポート作業の前段階に当たる「事前準備」の必要性及びその手順について、考察する。
-
-## インポートする際の手順
-1. インポートする際のOS・Java実行環境の調査
-
-2. [Tasking Manager](https://tasks.teachosm.org/projects/1499/tasks/?page=1)、JOSMを用いたOSMの妥当性検証、エラー・警告の修正
-
-3. OSMの妥当性検証で表示されたエラー・警告の事例収集([Googole Spredsheet](https://docs.google.com/spreadsheets/d/1g_SA-b3N3m7rKWzYLOa16hlr8yBpsMljPL22gAJN4FQ/edit?usp=sharing)にまとめる)
-
-4. まとめたエラー・警告をOpenStreetMapの方、古橋教授などの上級者マッパーに見てもらい、各項目の対処法を定める
-
-5. 定めた対処法をもとにマニュアル作成
-
-* 妥当性検証を実施する地域は[JA:MLIT PLATEAU/imports list](https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_list)を参考とし、**埼玉県新座市**とした。
+本研究では、誰でも編集可能な地図[**OpenStreetMap**](https://www.openstreetmap.org/#map=15/35.7449/139.4576) (以下OSM)の**3D建物データの量的・質的向上を目的**として、国土交通省主導の日本全国の3D都市モデルの整備・活用・オープンデータ化を目指すプロジェクト[**PLATEAU**](https://www.mlit.go.jp/plateau/)の**LOD1の建物データをOSMにインポート**するという作業を行う。インポートを実施する地域は[JA:MLIT PLATEAU/imports list](https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_list)を参考として**埼玉県新座市**とし、[JA:MLIT PLATEAU/imports outline/manual](https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_outline/manual)に基づいて、PLATEAUデータのインポート作業を行う。加えてインポート作業の前段階に当たる「事前準備」の必要性及びその手順についても考察する。
 
 ## Introduction
-2022年10月に行われた[UN/EC Open Source Software for SDG (OSS4SDG) Hakcathon](https://github.com/furuhashilab/README/issues/33#issuecomment-1281762516)にて青山学院大学　地球社会共生学部の古橋　大地教授及びYouthMappersAGUが中心となって取り組んだ、[PLATEAU](https://www.mlit.go.jp/plateau/)で公開されている東村山市のLOD1建物データを[OSM](https://www.openstreetmap.org/#map=15/35.7449/139.4576) にインポートする、という作業の内の一つである【妥当性検証】で、**表示されたエラー・警告がOSMによる問題なのか、PLATEAUによる問題なのかが判別できない**という問題が発生した。我々はこの問題の対処法として**インポート作業の事前準備としてOSMのみの妥当性検証を実施し、修正作業を行う**という考えに至った。この一連の作業をマニュアル化・実施することによりインポートする際の妥当性検証で表示されたエラー・警告はPLATEAUのデータによるものであると判別がつき、インポート作業の効率化が見込める。本研究では、マニュアル作成に向けた【OSM妥当性検証時のエラー・警告の事例収集】を[Tasking Manager](https://tasks.teachosm.org/projects/1499/tasks/?page=1)とJOSMを用いて行った。
-事前準備マニュアル作成後は、埼玉県新座市のLOD1建物データインポートを行う。
+近年、**デジタルツイン**という概念が世界的な注目を集めている。
+
+デジタルツインは、インターネットに接続した機器などを活用して現実空間の情報を取得し、サイバー空間内に現実空間の環境を再現する技術である。(参考：総務省「デジタルツインって何？」https://www.soumu.go.jp/hakusho-kids/use/economy/economy_11.html, 2023年12月21日情報取得)
+
+特に中国、米国、ドイツ、英国などの国々がデジタルツイン技術の先進国として力を入れており、産業界や学術界での注目度も高くなっている。(参照：国立研究開発法人科学技術振興機構 研究開発戦略センター「デジタルツインに関する国内外の研究開発動向」https://www.jst.go.jp/crds/pdf/2021/RR/CRDS-FY2021-RR-09.pdf, 2023年12月21日情報取得)
+
+デジタルツインによって、現実世界のリアルタイムな監視やシミュレーションが可能になり、業務の効率化、コスト削減、開発時間の短縮といった多岐にわたるメリットをもたらす。これらのメリットを踏まえると、デジタルツインの導入と発展は今後の技術革新において欠かせないものと言えるであろう。
+
+日本においても、デジタルツイン技術の重要性は認識されており、国土交通省都市局が主導する[**PLATEAU**](https://www.mlit.go.jp/plateau/)というプロジェクトがその一例だ。
+
+このプロジェクトは、日本全国の3D都市モデルの整備およびオープンデータ化を目指している。PLATEAUは、地理空間情報に関する国際標準化団体であるOpen Geospatial Consortium（OGC）によって策定された、3次元都市空間を記述するためのデータ交換フォーマット「CityGML」を採用しており、これにより建物や道路など都市の構成要素が、形だけでなく用途や築年数、行政計画といった都市活動情報を含む形でデジタルツイン化される。(参照：PLATEAU by MLIT「CityGML仕様及び品質評価手法についての解説」https://www.mlit.go.jp/toshi/daisei/content/001614666.pdf, 2023年12月21日情報取得)
+
+一方で、**OpenStreetMap**（以下OSM）は、誰でも地図の編集が可能なオープンデータの共同作業プロジェクトである。OSMの特徴は、その地域に住む地元の人々が編集することで、ローカルエリアの詳細な情報が反映されている点にある。しかし、3D建物データが不足しているか、十分に拡充されていない地域が多く、課題の一つとなっている。
+
+そこで注目されるのが、国土交通省都市局が主導し、高精度な3D建物データを提供している**PLATEAUのデータをOSMにインポート**する動きだ。この取り組みにより、OSM上の3D建物データは量的にも質的にも大きく向上する可能性がある。重要な点は、PLATEAUがOSMと互換性のあるODbLを採用していることであり、これにより両プロジェクト間でのデータの共有と活用が容易になる。
+
+本研究では、**PLATEAUのLOD1建物データをOSMにインポートする作業及びその事前準備の方法を確立する**ことを目指している。本研究の目的は、CityGML形式のデータをOSMに実践的にインポートし、OSMの3D建物データを量的にも質的にも向上させることだ。PLATEAUのデータを活用することで、OSMが提供するデジタル地図のリアリティと詳細性が高まり、より実用的で信頼性の高い地図情報の提供が可能になることが期待される。
+
+インポートを実施する地域は[JA:MLIT PLATEAU/imports list](https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_list)を参考として**埼玉県新座市**とし、[JA:MLIT PLATEAU/imports outline/manual](https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_outline/manual)に基づいて、PLATEAUデータのインポート作業を行う。加えてインポート作業の前段階に当たる「事前準備」の必要性及びその手順についても考察する。
+
 
 ## Methods
 
-## 新座市インポート前
+### 新座市インポート前
 ![420690374_395962506272993_7053118599376449919_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/76ef2189-1743-4b9e-8aae-afb4c651c8ee)
 ![417337755_1144385293392514_1737859945341398467_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/c8502dbf-165e-41a4-9c26-0b9500b85e34)
 
