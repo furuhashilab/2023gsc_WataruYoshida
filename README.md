@@ -76,18 +76,43 @@
 ![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/1998fe38-08a8-45d2-bae9-67ce17a3bfcc)
 
 ## 4. コンバーターを使用して変換作業を行う際のツール
+### 変換作業が、Powershellで実装されなかったが、**コマンドプロンプト**では実装できた
 
+* Powershell
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/6790c846-26c9-4317-806d-63ffb7862b71)
+
+* コマンドプロンプト
+<img width="957" alt="image" src="https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/d6e20ab3-5b19-4b59-b49e-46145456b6f4">
 
 
 ## 5. 1st-validation(解凍したフォルダに含まれている `***.osm` の妥当性検証)、2nd-validation(コンバーターで`***.org.osm`に変更したファイルの妥当性検証)及びエラー・警告のリスト化
 
-妥当性検証時に発生したエラー・警告を収集したリスト(https://docs.google.com/spreadsheets/d/1g_SA-b3N3m7rKWzYLOa16hlr8yBpsMljPL22gAJN4FQ/edit?usp=sharing)
+### 林優氏が中心となって行った、PLATEAUで公開されている各市町村の`City-gml`を`***.osm`, `***.org.osm`, `***.mrg.osm`に変換したデータファイルが[PLATEAU-BLDG import task](http://surveyor.mydns.jp/task-bldg/mesh/11230)に格納されている。そこで公開されている新座市の`**.org.osm`の一部が開けないものがある
+
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/6359cb30-2ad9-484a-a28a-765f30b2016c)
+* このような場合は**.org.osmファイル、**.mrg.osmファイルを削除し、$ java -Dfile.encoding=utf-8 -jar citygml-osm-jar-with-dependencies.jar 2ndを実行して新たに**.org.osmファイルを作成すると正しく読み込まれるようになる
+
+### 妥当性検証時に発生したエラー・警告を収集したリスト(https://docs.google.com/spreadsheets/d/1g_SA-b3N3m7rKWzYLOa16hlr8yBpsMljPL22gAJN4FQ/edit?usp=sharing)
 
 * 修正方法
 **ウェイが同じ区間を二度含んでいる**
 ![妥当性検証_修正](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/1360e4a7-cce9-4803-89bc-a008a949cb27)
 
-outlineを削除し、飛び出したノードを隣のノードと結合させる
+**outlineを削除し、飛び出したノードを隣のノードと結合させる**
+
+
+## 6. データアップロード
+
+### データをアップロードする際に帯域制限を超えたとの表示がでて、アップロードできない(2024/1/20)
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/971717c8-bb62-4f88-87e0-f4d24d49520f)
+
+* 2024/1/23前後にOSMのWebサーバーがダウンしていたため、このような状態になったと考えられる
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/11429cb9-3c51-4331-b1b3-d7ae21774253)
+
+**現在は復旧しているため、問題なくアップロードが可能**
+
+
+## 7. PLATEAUインポートアカウントがFrederik Ramm([woodpeck](https://www.openstreetmap.org/user/woodpeck))によってブロックされた
 
 
 ### 新座市インポート前
