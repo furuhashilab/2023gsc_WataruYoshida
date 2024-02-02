@@ -110,7 +110,7 @@
 ![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/11429cb9-3c51-4331-b1b3-d7ae21774253)
 
 **現在は復旧しているため、問題なくアップロードが可能**
-
+https://uptime.openstreetmap.org/
 
 ## 7. PLATEAUインポートアカウントがFrederik Ramm([woodpeck](https://www.openstreetmap.org/user/woodpeck))によってブロックされた
 <img width="738" alt="image" src="https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/091659ab-82ec-44d3-bf2b-4c2600d349a0">
