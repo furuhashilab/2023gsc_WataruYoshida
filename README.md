@@ -113,12 +113,27 @@
 
 
 ## 7. PLATEAUインポートアカウントがFrederik Ramm([woodpeck](https://www.openstreetmap.org/user/woodpeck))によってブロックされた
+<img width="738" alt="image" src="https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/091659ab-82ec-44d3-bf2b-4c2600d349a0">
 
+**@mapconcierge 先生によると、何の実績のないアカウントが急に大量のインポートを始めたので自動的にブロックされたとのこと**
+
+その後[data@osmfoundation.org](mailto:data@osmfoundation.org)にメッセージも送ったが、未だに返信がない状況
+
+<img width="467" alt="image" src="https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/c81d578b-3df4-46e9-93a9-614a6edb0a6b">
+
+
+**@mapconcierge 先生がFrederik Ramm([woodpeck](https://www.openstreetmap.org/user/woodpeck))氏に直接連絡してくれたが、返信がない**
+
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/22177ba9-6a6c-46c3-a099-960f9ed7b1d5)
+
+**そのため、アップロード作業のみ`furuhashilab4plateauimport`アカウントに変更して行うこととした**
+
+
+## 8. 新座市全地域のアップロード完了
 
 ### 新座市インポート前
 ![420690374_395962506272993_7053118599376449919_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/76ef2189-1743-4b9e-8aae-afb4c651c8ee)
 ![417337755_1144385293392514_1737859945341398467_n-min](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/c8502dbf-165e-41a4-9c26-0b9500b85e34)
-
 
 
 
@@ -140,7 +155,15 @@ https://lists.openstreetmap.org/pipermail/talk-ja/
 
 ## 参考文献
 
+* https://wiki.openstreetmap.org/wiki/JA:MLIT_PLATEAU/imports_outline/manual
 
+* https://www.soumu.go.jp/hakusho-kids/use/economy/economy_11.html
+
+* https://www.jst.go.jp/crds/pdf/2021/RR/CRDS-FY2021-RR-09.pdf
+
+* https://www.mlit.go.jp/plateau/
+
+* https://www.mlit.go.jp/toshi/daisei/content/001614666.pdf
 
 ## グラレコ
 
