@@ -126,7 +126,24 @@ https://uptime.openstreetmap.org/
 
 ![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/22177ba9-6a6c-46c3-a099-960f9ed7b1d5)
 
-**そのため、アップロード作業のみ`furuhashilab4plateauimport`アカウントに変更して行うこととした**
+### 2/2　[data@osmfoundation.org](mailto:data@osmfoundation.org)から返信が返ってきた。
+
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/bb263cac-421b-4a75-ae95-766b292d945e)
+
+**新しいアカウントでいきなり大量のアップロードを行ったことが原因で、自動破壊行為防止スクリプトによってインポートアカウントがブロックされた**
+
+* 解決法
+
+<img width="446" alt="image" src="https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/ed806988-29e2-4216-9fb0-b05abd3e6a58">
+
+<img width="451" alt="image" src="https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/c00a4445-2c44-40d8-82ec-7adfcc67b4b7">
+
+**OSMのインポート用アカウントのプロフィール説明のところに「私のメインアカウントはこちら」「こういう活動（インポートのWikiページ）に関わっているよ」などを書く**
+
+**→これにより、アカウントの信用度が上がる可能性が高くなる**
+
+
+**建物データが少ない地域からインポートしていくのも一つの手かもしれない**
 
 
 ## 8. 新座市全地域のアップロード完了
