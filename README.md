@@ -183,6 +183,7 @@ https://lists.openstreetmap.org/pipermail/talk-ja/
 * https://www.mlit.go.jp/toshi/daisei/content/001614666.pdf
 
 ## グラレコ
+![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/fc6dc516-6eda-4f57-aacd-893fd0626fb5)
 
 
 ## 最終発表資料
