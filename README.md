@@ -178,6 +178,6 @@ https://lists.openstreetmap.org/pipermail/talk-ja/
 
 
 ## 最終発表資料
-* メディウム
+* [メディウム](https://medium.com/furuhashilab/ゼミ論-plateau-lod1-建物データをosmにインポート-cde94d7768c0)
 
 * [スライド](https://docs.google.com/presentation/d/1l8BwkNM9-oHX0dAJYq9jBG22B_kMcQJhHZqOukkQZcQ/edit?usp=sharing)
