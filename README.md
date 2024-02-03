@@ -188,4 +188,4 @@ https://lists.openstreetmap.org/pipermail/talk-ja/
 ## 最終発表資料
 * メディウム
 
-* スライド
+* [スライド](https://docs.google.com/presentation/d/1l8BwkNM9-oHX0dAJYq9jBG22B_kMcQJhHZqOukkQZcQ/edit?usp=sharing)
