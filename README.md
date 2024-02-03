@@ -117,16 +117,7 @@ https://uptime.openstreetmap.org/
 
 **@mapconcierge 先生によると、何の実績のないアカウントが急に大量のインポートを始めたので自動的にブロックされたとのこと**
 
-その後[data@osmfoundation.org](mailto:data@osmfoundation.org)にメッセージも送ったが、未だに返信がない状況
-
-<img width="467" alt="image" src="https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/c81d578b-3df4-46e9-93a9-614a6edb0a6b">
-
-
-**@mapconcierge 先生がFrederik Ramm([woodpeck](https://www.openstreetmap.org/user/woodpeck))氏に直接連絡してくれたが、返信がない**
-
-![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/22177ba9-6a6c-46c3-a099-960f9ed7b1d5)
-
-### 2/2　[data@osmfoundation.org](mailto:data@osmfoundation.org)から返信が返ってきた。
+### 2/2　[data@osmfoundation.org](mailto:data@osmfoundation.org)に問いあわせたところ、以下のような返信が返ってきた。
 
 ![image](https://github.com/furuhashilab/2023gsc_WataruYoshida/assets/93134160/bb263cac-421b-4a75-ae95-766b292d945e)
 
